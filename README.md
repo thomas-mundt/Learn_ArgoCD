@@ -19,6 +19,8 @@ minikube ip
 
 #Username: admin
 argocd login <ARGOCD_SERVER>
+or
+argocd login localhost:8080 --insecure --username admin --password "${ARGOCD_PASS}"
 
 argocd account update-password
 
