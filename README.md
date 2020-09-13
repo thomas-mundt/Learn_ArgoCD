@@ -9,11 +9,10 @@ kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/st
 
 brew install argocd
 
-kubectl patch svc argocd-server -n argocd -p '{"spec": {"type": "LoadBalancer"}}'
-or ??
+
 kubectl port-forward svc/argocd-server -n argocd 8080:443
 
-
+# Get password
 kubectl get pods -n argocd -l app.kubernetes.io/name=argocd-server -o name | cut -d'/' -f 2
 
 minikube ip
