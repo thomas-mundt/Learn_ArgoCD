@@ -121,3 +121,6 @@ spec:
 k apply -f <file>
 k get applications -n argocd
 
+
+## Customize
+
