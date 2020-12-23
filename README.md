@@ -92,3 +92,4 @@ helm repo list
 >stable	https://charts.helm.sh/stable
 ```
 
+- Use Grafana and version older than recent
