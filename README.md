@@ -1,6 +1,22 @@
 # Learn ArgoCD
 
-Install
+## Install With Helm
+
+
+Minimum 4vcpu and 8GB Ram
+
+```
+kubectl create namespace argocd
+kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
+
+```
+
+
+
+
+
+## Install In Minikube
+
 ```
 minikube start
 
@@ -27,7 +43,6 @@ argocd account update-password
 argocd cluster add
 
 argocd cluster add minikube
-
 
 
 ```
