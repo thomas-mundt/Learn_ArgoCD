@@ -72,6 +72,7 @@ https://github.com/argoproj/argocd-example-apps.git
 
 ## Test
 
+Shows outofsync in ArgoCD
 ```
 kubectl scale deploy nginx --replicas 2
 ```
