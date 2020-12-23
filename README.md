@@ -20,6 +20,12 @@ Password: Name of argocd-server pod
 ```
 
 
+Add Github URL
+```
+https://github.com/thomas-mundt/Learn_ArgoCD
+```
+
+
 
 ## Install In Minikube
 
