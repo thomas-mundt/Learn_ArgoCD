@@ -13,6 +13,12 @@ kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/st
 
 - Change service argocd-server to NodePort
 
+Login
+```
+User: admin
+Password: Name of argocd-server pod
+```
+
 
 
 ## Install In Minikube
