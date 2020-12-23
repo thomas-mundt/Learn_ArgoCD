@@ -78,4 +78,6 @@ kubectl scale deploy nginx --replicas 2
 ```
 
 - Enable AutoSync
+- Prune
+- Self Healing
 
