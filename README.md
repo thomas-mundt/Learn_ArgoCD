@@ -83,3 +83,12 @@ kubectl scale deploy nginx --replicas 2
 
 - Roleback
 
+
+
+## Use Helm Templates
+
+```
+helm repo list
+>stable	https://charts.helm.sh/stable
+```
+
