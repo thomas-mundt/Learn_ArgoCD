@@ -11,7 +11,7 @@ kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/st
 
 ```
 
-
+- Change service argocd-server to NodePort
 
 
 
