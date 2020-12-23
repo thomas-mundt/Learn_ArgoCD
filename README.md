@@ -93,3 +93,5 @@ helm repo list
 ```
 
 - Use Grafana and version older than recent
+- Later change to NodePort
+- Later set password
