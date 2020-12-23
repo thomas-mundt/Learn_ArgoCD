@@ -77,3 +77,5 @@ Shows outofsync in ArgoCD
 kubectl scale deploy nginx --replicas 2
 ```
 
+- Enable AutoSync
+
