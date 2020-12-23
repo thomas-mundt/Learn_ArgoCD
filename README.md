@@ -122,5 +122,14 @@ k apply -f <file>
 k get applications -n argocd
 
 
-## Customize
+## Kustomize
+
+kustomize.yaml
+```
+# Add
+commonAnnotations:
+  channel: devopszone
+```
+
+
 
