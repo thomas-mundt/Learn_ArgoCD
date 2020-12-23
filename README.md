@@ -70,3 +70,9 @@ https://github.com/argoproj/argocd-example-apps.git
 ```
 
 
+## Test
+
+```
+kubectl scale deploy nginx --replicas 2
+```
+
