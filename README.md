@@ -118,4 +118,6 @@ spec:
     server: https://kubernetes.default.svc
     namespace: default
 ```
+k apply -f <file>
+k get applications -n argocd
 
