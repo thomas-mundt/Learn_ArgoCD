@@ -81,3 +81,5 @@ kubectl scale deploy nginx --replicas 2
 - Prune
 - Self Healing
 
+- Roleback
+
