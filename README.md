@@ -189,4 +189,11 @@ argocd app delete guestbook
 ```
 
 
+## Add a cluster
+
+```
+kubectl config get-contexts -o name
+argocd cluster add docker-desktop
+```
+
 
