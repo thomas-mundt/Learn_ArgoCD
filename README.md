@@ -60,6 +60,12 @@ argocd cluster add minikube
 ```
 
 
+## Port Forwarding
+
+```
+kubectl port-forward argocd-server-595b69d6bd-4hc6k -n argocd 8080:8080
+```
+
 
 
 ## Create An Application From A Git Repository
