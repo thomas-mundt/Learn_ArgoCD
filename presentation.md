@@ -104,6 +104,7 @@ Points to describe:
 
 Sync
 - Show resources
-
+- Service is in ns default (error!)
+- Fix in cli
 
 
