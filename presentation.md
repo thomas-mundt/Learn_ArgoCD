@@ -46,20 +46,19 @@ ansible-playbook -i inventory/mycluster/hosts.yaml  --user root cluster.yml
 
 Install Helm
 ```
-curl https://baltocdn.com/helm/signing.asc | sudo apt-key add -
-sudo apt-get install apt-transport-https --yes
-echo "deb https://baltocdn.com/helm/stable/debian/ all main" | sudo tee /etc/apt/sources.list.d/helm-stable-debian.list
-sudo apt-get update
+curl https://baltocdn.com/helm/signing.asc | sudo apt-key add - && \
+sudo apt-get install apt-transport-https --yes && \
+echo "deb https://baltocdn.com/helm/stable/debian/ all main" | sudo tee /etc/apt/sources.list.d/helm-stable-debian.list && \
+sudo apt-get update && \
 sudo apt-get install helm
 ```
 
 
 Install Ingress-controller
 ```
-kubectl create ns nginx-controller
-helm repo add nginx-stable https://helm.nginx.com/stable
-helm repo update
-
+kubectl create ns nginx-controller && \
+helm repo add nginx-stable https://helm.nginx.com/stable && \
+helm repo update && \
 helm install nginx nginx-stable/nginx-ingress -n nginx-controller
 ```
 
