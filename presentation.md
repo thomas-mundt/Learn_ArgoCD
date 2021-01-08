@@ -56,10 +56,11 @@ sudo apt-get install helm
 
 Install Ingress-controller
 ```
+kubectl create ns nginx-controller
 helm repo add nginx-stable https://helm.nginx.com/stable
 helm repo update
 
-helm install nginx nginx-stable/nginx-ingress
+helm install nginx nginx-stable/nginx-ingress -n nginx-controller
 ```
 
 
