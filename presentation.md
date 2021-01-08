@@ -92,19 +92,19 @@ k get po -n argocd
 
 ## First Application from Git
 
-New App =>
-https://github.com/thomas-mundt/Learn_ArgoCD
-yamls
+New App =>  
+https://github.com/thomas-mundt/Learn_ArgoCD  
+yamls  
 
-Points to describe:
-- Details
-- Out of sync
-- Manual sync
-- App Diff
+Points to describe:  
+- Details  
+- Out of sync  
+- Manual sync  
+- App Diff  
 
-Sync
-- Show resources
-- Service is in ns default (error!)
-- Fix in cli
+Sync  
+- Show resources  
+- Edit service manually to ClusterIP/NodePort
+- Edit deployment in Git
 
 
