@@ -66,8 +66,32 @@ helm install nginx nginx-stable/nginx-ingress -n nginx-controller
 
 ## Install ArgoCD
 
-```
+Prerequisites:
+- Minimum 4vcpu and 8GB Ram  
 
 ```
+kubectl create namespace argocd
+kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
+```
 
+Change service argocd-server to NodePort
+```
+k edit svc argocd-server -n argocd
+k get svc argocd-server -n argocd
+k get nodes -o wide
+```
+
+Login
+```
+User: admin
+Password: Name of argocd-server pod
+k get po -n argocd
+```
+
+
+
+
+Add Github URL
+
+https://github.com/thomas-mundt/Learn_ArgoCD
 
