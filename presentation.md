@@ -90,8 +90,8 @@ k get po -n argocd
 
 
 
+## First Application from Git
 
-Add Github URL
 
-https://github.com/thomas-mundt/Learn_ArgoCD
+Add Github URL: https://github.com/thomas-mundt/Learn_ArgoCD
 
