@@ -104,7 +104,27 @@ Points to describe:
 
 Sync  
 - Show resources  
-- Edit service manually to ClusterIP/NodePort
-- Edit deployment in Git
+- Edit service manually to ClusterIP/NodePort  
+- Edit deployment in Git  
+- History and Rollback  
+
+Helm (Add in Gui)  
+- jaegertracing       	https://jaegertracing.github.io/helm-charts  
+- stable              	https://charts.helm.sh/stable  
+- bitnami             	https://charts.bitnami.com/bitnami  
+- prometheus-community	https://prometheus-community.github.io/helm-charts  
+- grafana             	https://grafana.github.io/helm-charts  
+
+Add new App with Helm  
+- grafana  
+- Edit service to NodePort  
+- Show Grafana Gui
+- Change to NodePort in Gui under App Details
+- Change to older Grafana version number 
+- Enable Autosync + Prune + Selfheal
+- Edit deployment to 10 replicas
+- Explain benefit of unexpected deletion of ressources
+
+
 
 
