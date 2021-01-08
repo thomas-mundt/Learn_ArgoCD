@@ -23,14 +23,14 @@ cp -rfp inventory/sample inventory/mycluster
 
 
 
-# Update Ansible inventory file with inventory builder
+## Update Ansible inventory file with inventory builder
 ```
 declare -a IPS=(10.10.1.3 10.10.1.4)
 CONFIG_FILE=inventory/mycluster/hosts.yaml python3 contrib/inventory_builder/inventory.py ${IPS[@]}
 ```
 
 
-# Review and change parameters under ``inventory/mycluster/group_vars/k8s-cluster/k8s-cluster.yml``
+## Review and change parameters
 ```
 vim ./inventory/group_vars/k8s-cluster.yml
 -kube_network_plugin: calico
@@ -54,7 +54,7 @@ sudo apt-get install helm
 ```
 
 
-Install Nginx
+Install Ingress-controller
 ```
 helm repo add nginx-stable https://helm.nginx.com/stable
 helm repo update
