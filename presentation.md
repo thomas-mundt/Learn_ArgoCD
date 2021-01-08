@@ -92,6 +92,18 @@ k get po -n argocd
 
 ## First Application from Git
 
+New App =>
+https://github.com/thomas-mundt/Learn_ArgoCD
+yamls
 
-Add Github URL: https://github.com/thomas-mundt/Learn_ArgoCD
+Points to describe:
+- Details
+- Out of sync
+- Manual sync
+- App Diff
+
+Sync
+- Show resources
+
+
 
