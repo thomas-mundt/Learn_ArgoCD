@@ -199,5 +199,11 @@ kubectl config get-contexts -o name
 argocd cluster add docker-desktop
 ```
 
+```
+kubectl config get-contexts
+kubectl config rename-context <name> <new-name>
+```
+
+
 
 
