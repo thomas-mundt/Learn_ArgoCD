@@ -125,6 +125,16 @@ Add new App with Helm
 - Explain benefit of unexpected deletion of ressources  
 
 
+
+## First Helm Application from Git
+
+- Add Repo: https://github.com/thomas-mundt/Learn_ArgoCD.git  
+- Create Application (Helm Charts will automatically be scanned)  
+
+
+
+
+
 ## Argo CD CLI
 
 ```
@@ -188,4 +198,6 @@ argocd app delete guestbook
 kubectl config get-contexts -o name
 argocd cluster add docker-desktop
 ```
+
+
 
