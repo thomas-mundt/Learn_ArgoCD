@@ -215,6 +215,8 @@ cp ~/.kube/config ~/.kube/config.bak
 
 export KUBECONFIG=~/.kube/config:~/tmp/new_config  
 kubectl config view --raw > /tmp/config
+
+kubectl config view
 ```
 
 
