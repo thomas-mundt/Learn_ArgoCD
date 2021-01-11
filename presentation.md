@@ -220,6 +220,27 @@ kubectl config view
 ```
 
 
+## Disaster Recovery
+
+```
+argocd version | grep server
+export VERSION=v1.0.1
+```
+
+Export to a backup
+```
+docker run -v ~/.kube:/home/argocd/.kube --rm argoproj/argocd:$VERSION argocd-util export > backup.yaml
+```
+
+Import from a backup
+```
+docker run -i -v ~/.kube:/home/argocd/.kube --rm argoproj/argocd:$VERSION argocd-util import - < backup.yaml
+```
+
+
+
+
+
 
 
 
