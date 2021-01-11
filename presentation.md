@@ -148,7 +148,7 @@ argocd help
 argocd login https://168.119.238.148:31771
 >y
 >admin
->Name off argocd pod
+>Name off argocd pod or password you has set  
 
 #Or
 argocd login 168.119.238.148:31771 --insecure
