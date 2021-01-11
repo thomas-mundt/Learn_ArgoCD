@@ -201,8 +201,25 @@ argocd cluster add docker-desktop
 
 ```
 kubectl config get-contexts
+kubectl config current-context
 kubectl config rename-context <name> <new-name>
+# kubectl config rename-context kubernetes-admin@cluster.local dev
+
 ```
+
+Merge two Kubeconfigs
+```
+# Here is a quick command you can run to merge your two config files.
+# Make a copy of your existing config 
+cp ~/.kube/config ~/.kube/config.bak 
+
+# Merge the two config files together into a new config file 
+KUBECONFIG=~/.kube/config:/path/to/new/config kubectl config view --flatten > /tmp/config 
+
+# Replace your old config with the new merged config 
+mv /tmp/config ~/.kube/config 
+```
+
 
 
 
