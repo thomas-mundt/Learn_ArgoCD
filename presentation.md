@@ -213,11 +213,8 @@ Merge two Kubeconfigs
 # Make a copy of your existing config 
 cp ~/.kube/config ~/.kube/config.bak 
 
-# Merge the two config files together into a new config file 
-KUBECONFIG=~/.kube/config:/path/to/new/config kubectl config view --flatten > /tmp/config 
-
-# Replace your old config with the new merged config 
-mv /tmp/config ~/.kube/config 
+export KUBECONFIG=~/.kube/config:~/tmp/new_config  
+kubectl config view --raw > /tmp/config
 ```
 
 
