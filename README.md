@@ -43,6 +43,9 @@ kubectl port-forward svc/argocd-server -n argocd 8080:443
 # Get password
 kubectl get pods -n argocd -l app.kubernetes.io/name=argocd-server -o name | cut -d'/' -f 2
 
+#Reset Password
+kubectl patch secret argocd-secret  -p '{"data": {"admin.password": null, "admin.passwordMtime": null}}'
+
 minikube ip
 
 #Username: admin
